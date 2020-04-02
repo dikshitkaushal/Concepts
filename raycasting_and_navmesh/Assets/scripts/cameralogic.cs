@@ -28,6 +28,7 @@ public class cameralogic : MonoBehaviour
     private void allignwithplayer()
     {
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y + y_offset, player.transform.position.z + z_offset);
+    
     }
 
     private void updatecamera()

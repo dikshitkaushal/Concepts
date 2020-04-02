@@ -26,6 +26,7 @@ public class player_movement : MonoBehaviour
                 Debug.Log(hit.point);
                 m_navmeshagent.SetDestination(hit.point);
                 Instantiate(visual, hit.point, Quaternion.identity);
+            
             }
         }
     }
