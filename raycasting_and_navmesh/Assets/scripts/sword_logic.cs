@@ -14,19 +14,27 @@ public class sword_logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire2"))
+        startattack(Input.GetButtonDown("Fire2"));
+       
+        /*if(Input.GetButtonDown("Fire2"))
         {
             m_animator.SetBool("isattacking", true);
+      
         }
         else
         {
             m_animator.SetBool("isattacking", false);
-        }
+        }*/
 /*        or simply we can do like this
         m_animator.SetBool("isattacking", Input.GetButtonDown("Fire1"));*/
     }
     public void underattack()
     {
-        Debug.Log("you are under attack");
+       /* Debug.Log("you are under attack");*/
     }
+    public void startattack(bool isattacking)
+    {
+        m_animator.SetBool("isattacking", isattacking);
+    }
+
 }
